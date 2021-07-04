@@ -1,0 +1,52 @@
+form{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0;
+    min-width: 500px;
+}
+
+.input-group{
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.input-group input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+}
+
+.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.input-group-btn{
+    position: relative;
+    white-space: nowrap;
+    width: 1%;
+    padding: 0;
+}
+
+.fa-search::before{
+    content: "\f002";
+}
+
+.close{
+    width: 30px;
+    height: 30px;
+    line-height: 45px;
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    outline: none;
+    border: 0;
+    padding: 0;
+    bottom:21px;
+}

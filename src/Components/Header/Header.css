@@ -1,0 +1,208 @@
+.top-header{
+    border-bottom: 1px solid #f5f5f5;
+    padding-top: 20px;
+    padding-bottom:10px;
+}
+
+.left-header{
+    display:flex;
+    align-items:center;
+    height:70px;
+}
+
+.left-header .text {
+    font-weight: 500;
+    color: #1c1c1c;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    display:block;
+}
+
+.mid-header img{
+    height:70px;
+    border-radius: 20px;
+}
+
+.right-header .justify-end{
+    display:flex;
+    justify-content:flex-end;
+    height:50px;
+    align-items:center;
+}
+.item{
+    list-style: none;
+    position: relative;
+}
+
+/* tai khoan */
+.item-account a{
+    font-weight: 500;
+    color: #1c1c1c;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    position: relative;
+    padding: 0 15px;
+    white-space: nowrap;
+}
+
+.item a:hover{
+    color: #33ccff!important;
+}
+
+.item-account:hover::before, .item-account:hover ul{
+    display: block;
+}
+
+.item-account::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    width: 100%;
+    height: 45px;
+    background: 0 0;
+    display: none;
+    z-index: 8;
+}
+
+.item-account ul::before{
+    border: 9px solid transparent;
+    border-bottom: 9px solid #efefef;
+    margin-left: -9px;
+    bottom: 100%;
+    left: 20%;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.item-account ul{
+    position: absolute;
+    display: none;
+    top: 40px;
+    left: 0;
+    z-index: 2;
+    background: #fff;
+    width: 100%;
+    min-width: 200px;
+    border: 1px solid #efefef;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 6px 12px 0 rgb(0 0 0 / 18%);
+    list-style: none;
+    padding-top:7px;
+}
+
+.item-account ul li a{
+    display: block;
+    padding: 7px 10px;
+    color: #1c1c1c;
+    text-transform: uppercase;
+}
+
+.item-account ul li a:hover{
+    color:#33ccff!important;
+    background-color: #f7f7f7;
+}
+
+
+/*GIO HANG*/
+.item-cart{
+    z-index: 10;
+    text-align: center;
+}
+
+.item-cart:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    width: 100%;
+    height: 45px;
+    background: 0 0;
+    display: none;
+    z-index: 8;
+}
+
+.item-cart:hover::before,
+.item-cart:hover .cart-content {
+    display: block !important;
+}
+.item-cart a{
+    font-weight: 500;
+    color: #1c1c1c;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    position: relative;
+    padding: 0 15px;
+    white-space: nowrap;
+}
+
+.count_item_pr{
+    height: 20px;
+    line-height: 20px;
+    background: #1c1c1c;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    text-align: center;
+    min-width: 20px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 2px;
+    position: absolute;
+    top: -10px;
+    right: 6px;
+}
+
+.cart-content{
+    display: none;
+    position: absolute;
+    right: 0;
+    background: #fff;
+    padding: 0;
+    text-align: left;
+    z-index: 10000;
+    border-radius: 0;
+    -webkit-box-shadow: 0px 2px 6px 0px rgb(50 50 50 / 33%);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.33);
+    box-shadow: 0px 2px 6px 0px rgb(50 50 50 / 33%);
+    top: 57px;
+}
+
+.cart-content>ul{
+    padding: 10px;
+    margin: 0;
+    max-height: 582px;
+    min-width: 320px;
+}
+
+
+/* TIM KIEM */
+.item-search a{
+    font-weight: 500;
+    color: #1c1c1c;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    position: relative;
+    padding: 0 15px;
+    white-space: nowrap;
+}
+
+.search-bar{
+    height: 70px;
+    overflow: visible;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    position: relative;
+    transition: .2s all;
+}
